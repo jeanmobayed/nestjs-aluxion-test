@@ -6,12 +6,12 @@ import { ForbiddenException, Injectable, NotFoundException } from '@nestjs/commo
 
 import { ReadableFileInterface } from './interfaces/readable-file.interface';
 import { File } from './file.entity';
-import { User } from 'src/auth/entities/user.entity';
+import { User } from '../auth/entities/user.entity';
 import { CreateFileDto } from './dto/create-file.dto';
 import { FileRepository } from './file.repository';
 import { UpdateFileDto } from './dto/update-file.dto';
 import { ConfigService } from 'nestjs-config';
-import { RolesEnum } from 'src/auth/enums/roles.enum';
+import { RolesEnum } from '../auth/enums/roles.enum';
 import { PromiseResult } from 'aws-sdk/lib/request';
 
 @Injectable()

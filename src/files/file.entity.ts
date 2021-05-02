@@ -1,6 +1,6 @@
 import { Column, Entity, ManyToOne, BaseEntity, PrimaryGeneratedColumn } from 'typeorm';
 
-import { User } from 'src/auth/entities/user.entity';
+import { User } from '../auth/entities/user.entity';
 import { ApiResponseProperty } from '@nestjs/swagger';
 
 @Entity()

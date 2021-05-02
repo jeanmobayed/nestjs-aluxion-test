@@ -3,7 +3,7 @@ import { EntityRepository, Repository } from 'typeorm';
 import { CreateFileDto } from './dto/create-file.dto';
 import { User } from '../auth/entities/user.entity';
 import { Logger, InternalServerErrorException } from '@nestjs/common';
-import { RolesEnum } from 'src/auth/enums/roles.enum';
+import { RolesEnum } from '../auth/enums/roles.enum';
 
 @EntityRepository(File)
 export class FileRepository extends Repository<File> {
